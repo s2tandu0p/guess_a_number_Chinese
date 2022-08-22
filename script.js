@@ -31,7 +31,7 @@ function checkGuess() {
   //     "Highest Guess: " + Math.max.apply(Math, lowestAndHighestGuess);
 
   if (userGuess == randomNumber) {
-    lastResult.textContent = "可以啊！！！！！有点厉害哟！！！";
+    lastResult.textContent = "可以啊！有点厉害哟！！";
     lastResult.style.backgroundColor = "green";
     lastResult.style.marginBottom = "20px";
     numberRange.textContent = "";
