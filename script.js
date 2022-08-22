@@ -31,7 +31,7 @@ function checkGuess() {
   //     "Highest Guess: " + Math.max.apply(Math, lowestAndHighestGuess);
 
   if (userGuess == randomNumber) {
-    lastResult.textContent = "可以啊！有点厉害哟！！";
+    lastResult.textContent = "可以啊！有点厉害哟！！一天好心情！！！";
     lastResult.style.backgroundColor = "green";
     lastResult.style.marginBottom = "20px";
     numberRange.textContent = "";
@@ -45,17 +45,18 @@ function checkGuess() {
     lowOrHigh.textContent = "";
     setGameOver();
   } else {
-    lastResult.textContent =
-      "再试试，一共10次机会，还有" + ` ${10 - guessCount} ` + "次机会";
+    lastResult.textContent = "再试试!!";
 
-    lastResult.style.backgroundColor = "red";
+    lastResult.style.backgroundColor = "blue";
     lastResult.style.marginBottom = "20px";
     if (userGuess < randomNumber) {
-      lowOrHigh.textContent = "再高点！";
+      lowOrHigh.textContent =
+        "再高点！还有" + ` ${10 - guessCount} ` + "次机会";
       biggerThan.push(userGuess);
       console.log(biggerThan);
     } else if (userGuess > randomNumber) {
-      lowOrHigh.textContent = "低点低点。。。";
+      lowOrHigh.textContent =
+        "低点低点。。。还有" + ` ${10 - guessCount} ` + "次机会";
       smallerThan.push(userGuess);
       console.log(smallerThan);
     }
