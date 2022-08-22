@@ -101,7 +101,8 @@ function resetGame() {
   guessSubmit.disabled = false;
   guessField.value = "";
   guessField.focus();
-
+  biggerThan = [0];
+  smallerThan = [100];
   lastResult.style.backgroundColor = "white";
 
   randomNumber = Math.floor(Math.random() * 100) + 1;
