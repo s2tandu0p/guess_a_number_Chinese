@@ -31,7 +31,8 @@ function checkGuess() {
   //     "Highest Guess: " + Math.max.apply(Math, lowestAndHighestGuess);
 
   if (userGuess == randomNumber) {
-    lastResult.textContent = "可以啊！有点厉害哟！！一天好心情！！！";
+    lastResult.textContent = "可以啊！有点厉害哟！！一天好心情！！";
+    lastResult.style.textAlign = "center";
     lastResult.style.backgroundColor = "green";
     lastResult.style.marginBottom = "20px";
     numberRange.textContent = "";
@@ -46,6 +47,7 @@ function checkGuess() {
     setGameOver();
   } else {
     lastResult.textContent = "再试试!!";
+    lastResult.style.textAlign = "center";
 
     lastResult.style.backgroundColor = "blue";
     lastResult.style.marginBottom = "20px";
