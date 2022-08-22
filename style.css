@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    width: 300px;
+    
+    margin: 0 auto;
+}
+
+.form input[type="number"]{
+    width: 200px;
+}
+
+.lastResult{
+    color: white;
+    padding: 3px;
+}
+
+.form{
+    margin-top: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.range{
+    margin-bottom: 20px;
+}
+
+.guessField{
+    margin-bottom: 10px;
+}
+
+.guessSubmit{
+    margin-bottom:5px
+}
